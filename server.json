@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/gprofiler",
   "title": "Gprofiler",
   "description": "g:Profiler (University of Tartu) — functional enrichment analysis for a gene list against GO…",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/gprofiler",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-gprofiler",
