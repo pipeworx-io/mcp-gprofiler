@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-gprofiler",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "g:Profiler (University of Tartu) — functional enrichment analysis for a gene list against GO, KEGG, Reactome, WikiPathways, TRANSFAC, miRTarBase, CORUM, HPA and HPO, plus gene/protein ID conversion and cross-species ortholog mapping. Keyless.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-gprofiler": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "gprofiler"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-gprofiler.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/gprofiler",
   "pipeworx": {
-    "sourceHash": "v1-f82d5c86cc7b6301e1d6f940611ed4abc65a1b9481b644f6bb20a9de1dc81fa9",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "gprofiler",
+    "gatewaySlug": "gprofiler",
+    "sourceHash": "v1-7fa4f6a24b8fc86cc16ce06ae4a757e6970344585025c08871c53c293b4dfb67",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
