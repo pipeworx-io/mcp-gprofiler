@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-gprofiler",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "g:Profiler (University of Tartu) — functional enrichment analysis for a gene list against GO, KEGG, Reactome, WikiPathways, TRANSFAC, miRTarBase, CORUM, HPA and HPO, plus gene/protein ID conversion and cross-species ortholog mapping. Keyless.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "gprofiler",
     "gatewaySlug": "gprofiler",
-    "sourceHash": "v1-7fa4f6a24b8fc86cc16ce06ae4a757e6970344585025c08871c53c293b4dfb67",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-a4e5e229b69d0182df2c625e24b8912c9cab9d9171724e95bae49fadb99724cb",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
